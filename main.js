@@ -38,3 +38,10 @@ function isInViewport(element) {
   // Trigger on scroll
 window.addEventListener('scroll', animateCounters);
 
+
+
+  function toggleFAQ(id) {
+    const faq = document.getElementById(`faq-${id}`);
+    faq.classList.toggle("hidden");
+  }
+
