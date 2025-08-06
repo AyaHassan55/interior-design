@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interior Design</title>
+        <link rel="stylesheet" href="main.css">
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        
+
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="bg-white">
+        <div class="max-w-8xl mx-auto flex justify-between items-center px-6 lg:px-20 p-6">
+            <img src="images/Logo (1).png" alt="" style="width: 177px; height: 49px;">
+            <!-- <div class="text-xl font-bold">Interio</div> -->
+            <ul id="menu" class="hidden md:flex space-x-6 text-sm font-medium">
+                <li><a href="#" class="hover:text-orange-500">Home</a></li>
+                <li><a href="#" class="hover:text-orange-500">Services</a></li>
+                <li><a href="#" class="hover:text-orange-500">Contact</a></li>
+                <li><a href="#" class="hover:text-orange-500">Support</a></li>
+            </ul>
+            <button class="bg-black text-white px-5 py-2 rounded hover:bg-gray-800 transition">
+                Sign Up
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-white px-6 py-16 md:py-24 lg:px-20">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <!-- Left Content -->
+            <div>
+                
+                <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
+                    Interior Design</h1>
+                <p class="text-gray-600 mb-8 max-w-md leading-relaxed">
+                    Step into a world where the art of Interior Design is meticulously crafted to bring together timeless elegance and cutting-edge modern innovation. Allowing you to transform your living spaces into the epitome of luxury and sophistication.
+                </p>
+                <button class="bg-black text-white px-6 py-3 rounded hover:bg-gray-800 transition">
+                    Start Project
+                </button>
+
+                <!-- Stats -->
+                <div class="grid grid-cols-3 gap-4 mt-24 max-w-3xl mx-auto text-center" id="stats">
+                    <div>
+                        <h3 class="text-2xl font-bold counter"  data-target="400">0</h3>
+                        <p class="text-sm text-gray-500">Project Complete</p>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold counter"  data-target="600">0</h3>
+                        <p class="text-sm text-gray-500">Satisfied Clients</p>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold counter"  data-target="100">0</h3>
+                        <p class="text-sm text-gray-500">Unique Styles</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Images -->
+            <div class="relative">
+                <img src="images/Image 1.png" alt="Room 1" class="w-60 md:w-72 rounded shadow-lg absolute top-0 right-0"/>
+                <div class="square"></div>
+                <img src="images/Image 2.png" alt="Room 2" class="w-72 md:w-96 rounded shadow-lg mt-67 ml-8 relative"/>
+            </div>
+        </div>
+
+    </section>
+    <!-- service section -->
+   
+    <section>
+        <div class="max-w-7xl mx-auto px-6 lg:px-20 py-16">
+            <div class="flex items-center justify-start mb-11">
+                <div class="w-19 h-0.5 bg-black mr-4"></div>
+                <h2 class="text-4xl font-bold text-center">Our Services</h2>
+            </div>
+
+
+            <div class="flex flex-col md:flex-row gap-10">
+                <!-- service 1-->
+                <div class="flex items-start gap-4 w-full md:w-1/3">
+                    <img src="images/Lighting design icon.png" alt="Lighting Icon" class="w-12 h-12 flex-shrink-0 mt-1" />
+                    <div>
+                        <h3 class="text-lg font-semibold mb-4">Lighting Design</h3>
+                        <p class="text-gray-600 text-sm">
+                            Achieve the perfect balance of ambient, task, and accent lighting 
+                            <em>for a functional atmosphere</em>.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- service 2  -->
+                <div class="flex items-start gap-4 w-full md:w-1/3">
+                    <img src="images/Interior design icon.png" alt="Interior Icon" class="w-12 h-12 flex-shrink-0 mt-1" />
+                    <div>
+                        <h3 class="text-lg font-semibold mb-4">Interior Design</h3>
+                        <p class="text-gray-600 text-sm">
+                            From concept to completion, we oversee every detail to bring your 
+                            <em>vision to life efficiently</em>.
+                        </p>
+                    </div>
+                </div>
+
+                <!--  service 3 -->
+                <div class="flex items-start gap-4 w-full md:w-1/3">
+                    <img src="images/Outdoor design icon.png" alt="Outdoor Icon" class="w-12 h-12 flex-shrink-0 mt-1" />
+                    <div>
+                        <h3 class="text-lg font-semibold mb-4">Outdoor Design</h3>
+                        <p class="text-gray-600 text-sm">
+                            Celebrate the changing seasons with our seasonal outdoor decor 
+                            <em>services</em>.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
