@@ -17,3 +17,88 @@ hr{
     color: #DADADA;
     margin-left: 15px;
 }
+.testimonial{
+    margin: 0 100px 0 83px;
+    position: relative;
+}
+.testimonial .base{
+    display: flex;
+}
+.testimonial  .base img{
+    width: 500px;
+    height: 500px;
+    
+}
+.testimonial .base h2{
+    font-size: 43px;
+    font-weight: 600;
+    line-height: 100%;
+    
+    color: #1F1F1F;
+    margin-left: 113px;
+}
+.testimonial .testi-sections{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    background-color: white;
+    position: absolute;
+    top: 126px;
+    left: 159px;
+    padding: 26px;
+
+    
+}
+
+.testimonial .testi-sections .part{
+    width: 450px;
+    height: 450px;
+    color: white;
+    background: #1F1F1F;
+    padding: 39px 39px 0 39px;
+    border-radius: 4px;
+}
+.testimonial .testi-sections .part .icon{
+    width: 60px;
+    font-size: 80px;
+    font-weight: 600;
+}
+.testimonial .testi-sections .part p{
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 165%;
+    color: #FFFFFF;
+}
+.client-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+.client-info img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.part .client-info  .client-about p{
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 165%;
+    color: #929292;
+}
+.arrows{
+    display: flex;
+    
+    gap: 20px;
+}
+.arrows .arrow{
+    margin: 26px -1px 0px 0px;
+}
+.arrows .arrow span{
+    background: #F1F1F1;
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    font-weight: 700;
+}
