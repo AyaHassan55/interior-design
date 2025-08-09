@@ -1,6 +1,82 @@
 *{
+    /* margin: 0; */
+    /* padding: 0; */
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    /* scroll-padding-top: 2rem; */
     font-family: 'Inter', sans-serif;
 }
+html {
+    scroll-behavior: smooth;
+}
+/* nav */
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    z-index: 1000;
+
+    transition: 0.5s;
+}
+header.shadow {
+    /* background-color: green; */
+    box-shadow: 0 0 4px rgb(14 55 54 / 15%);
+}
+header.shadow .navbar a {
+    color: black;
+}
+
+
+.logo img {
+    width: 184px;
+}
+header .navbar {
+    display: flex;
+    column-gap: 5rem;
+}
+
+.navbar li {
+    position: relative;
+}
+.navbar a {
+    font-weight: 500;
+    font-size: 1rem;
+    color: #545454;
+}
+.navbar a::after{
+    content: '';
+    position: absolute;
+    background-color: #1F1F1F;
+    width: 0;
+    height: 3px;
+    left: 0;
+    bottom: -4px;
+    transition: 0.4s all linear;
+}
+.navbar .active{
+    top: 70px;
+}
+.navbar a:hover::after,
+.navbar .home-active::after {
+    width: 100%;
+}
+
+header .btn {
+    background-color: #1F1F1F;
+    color: white;
+    padding: 0.7rem 1.4rem;
+    -radius: 0.5rem;
+    font-weight: 400;
+}
+
+/* nav */
+
 .square{
     width: 100px;
     height: 100px;
@@ -37,6 +113,45 @@ hr{
     color: #1F1F1F;
     margin-left: 113px;
 }
+@media (max-width: 774px) {
+    .process h2{
+        font-size: 30px;
+        margin-left: -22px;
+        color:#1F1F1F;
+    }
+    .proc-img{
+        display: none;
+    }
+    .testimonial{
+        min-height: fit-content;
+    }
+    .testimonial .base img{
+        display: none;
+    }
+    .testimonial .base h2{
+        font-size: 30px;
+        align-items: center;
+        margin-left: -12px;
+        margin-top: -84px;
+    }
+    .testi-sections{
+        flex-direction: column;
+        margin-top: -18px;
+
+    }
+    .testi-sections .part{
+        width: 325px !important;
+        height: 325px !important;
+        padding: 0;
+        margin: 0 -9rem 2rem -16rem;
+    }
+    .testimonial .testi-sections .part .icon{
+        font-size: 44px !important;
+    }
+
+ 
+    
+}
 .testimonial .testi-sections{
     display: flex;
     justify-content: center;
@@ -47,8 +162,6 @@ hr{
     top: 126px;
     left: 159px;
     padding: 26px;
-
-    
 }
 
 .testimonial .testi-sections .part{
@@ -110,5 +223,21 @@ hr{
     
     box-shadow: 0 -4px 6px -1px rgba(0, 0, 0, 0.1),
     0 -2px 4px -2px rgba(0, 0, 0, 0.1);
+
+}
+@media (max-width:1080px) {
+    
+}
+@media (max-width:991px) {
+    header {
+    padding: 18px 4%;
+    }
+    section{
+    padding: 50px 4%;
+    }
+    .form{
+    position: relative;
+    margin-bottom: 108px;
+}
 
 }
